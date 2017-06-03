@@ -3,9 +3,8 @@
 The python-scripts used to create FE models are found in the folder "ABAQUS", and the 
 scripts used for post processing are found in the folder "MATLAB". 
 
-============================================================================================
-== 	ABAQUS 
-============================================================================================
+== ABAQUS 
+
 If ABAQUS is installed on the computer, the scripts can be run by opening a command window 
 in the folder (shift + right mouse button -> "Open command window here") and using the
 commands:
@@ -31,18 +30,18 @@ The scripts:
 		  The functions used by "CreateModel_BasicScript.py". An explanation for every 
 		  function can be found inside the script. 
 
-============================================================================================
-== 	MATLAB 
-============================================================================================
+MATLAB 
 Make sure to edit directories.
 
 The script:
+
 	- ABAQUS_study_NoPlot_Basic.m
 		  The basic script used for post processing of ABAQUS data. The user chooses 
 		  the directory that has the ABAQUS output files. It then reads the infoFile.txt
 		  and calculates the acoustic impedance.
 
 The supporting functions (An explanation for every function are found inside the functions):
+
 	- compositeSpheresModel_bulk.m 
 		  Calculates the effective bulk modulus of a two-phase composite using the 
 		  CSM as described in section 2.5.3. The effective bulk modulus calculated using
