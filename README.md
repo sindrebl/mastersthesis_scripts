@@ -1,4 +1,4 @@
-# masterthesis_scripts
+# mastersthesis_scripts
 The python-scripts used to create FE models are found in the folder "ABAQUS", and the 
 scripts used for post processing are found in the folder "MATLAB". 
 
