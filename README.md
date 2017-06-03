@@ -23,7 +23,7 @@ scripts has used ABAQUS 6.14-1, and cannot ensure that the files will work for o
 		  It can be used as a starting point for every simulation.
 	- CreateModel_Comparison.py
 		  An example of how the basic script can be used to create multiple models. 		
-		  It is the actual script used in the comparison study in the master 		
+		  It is the actual script used in the comparison study in the master's 		
 		  thesis.	
 	- myUtilities.py
 		  The functions used by "CreateModel_BasicScript.py". An explanation for every 
