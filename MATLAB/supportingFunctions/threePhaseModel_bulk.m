@@ -1,5 +1,5 @@
-function k_eff = compositeSpheresModel_bulk(c,k_i,k_m,mu_m)
-%compositeSpheresModel_bulk calculates the eff bulk modulus
+function k_eff = threePhaseModel_bulk(c,k_i,k_m,mu_m)
+%threePhaseModel_bulk calculates the eff bulk modulus
 %   c   = volumefraction of inclusions in matrix.
 %   k   = bulk modulus 
 %   mu  = shear modulus
