@@ -42,14 +42,14 @@ Make sure to edit directories.
 ### The supporting functions:
 An explanation for every function are found inside the functions.
 
-	- threePhaseModel_bulk.m 
-		  Calculates the effective bulk modulus of a two-phase composite using the 
-		  TPM as described in section 2.4.3. 
 	- density_eff.m
 		  Calculates the effective density of a two-phase composite.
 	- homogenization_threePhase.m
 		  Approximates the effective homogeneous three-phase composite using 
 		  "threePhaseModel_bulk.m ", "density_eff.m" and "ThreePhaseModel_shear.m".
+	- threePhaseModel_bulk.m 
+		  Calculates the effective bulk modulus of a two-phase composite using the 
+		  TPM as described in section 2.4.3. 	  
 	- threePhaseModel_shear.m
 		  Calculates the effective shear modulus of a two-phase composite using the
 		  TPM as described in section 2.5.4.
