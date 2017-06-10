@@ -27,7 +27,7 @@ matrix.k         = bulk(matrix.E,matrix.nu);
 
 %% Homogenization of particle
 sphere.mu       = threePhaseModel_shear(c_sphere,core.nu,core.mu,shell.nu,shell.mu);
-sphere.k        = compositeSpheresModel_bulk(c_sphere,core.k,shell.k,shell.mu);
+sphere.k        = threePhaseModel_bulk(c_sphere,core.k,shell.k,shell.mu);
 sphere.rho      = density_eff(c_sphere,core.rho,shell.rho);
 sphere.nu       = poisson(sphere.k,sphere.mu);
 sphere.cL       = longVel(sphere.k,sphere.mu,sphere.rho);
@@ -36,7 +36,7 @@ sphere.imp		= sphere.cL*sphere.rho;
 
 %% Homogenization of composite
 composite.mu    = threePhaseModel_shear(c_composite,sphere.nu,sphere.mu,matrix.nu,matrix.mu);
-composite.k     = compositeSpheresModel_bulk(c_composite,sphere.k,matrix.k,matrix.mu);
+composite.k     = threePhaseModel_bulk(c_composite,sphere.k,matrix.k,matrix.mu);
 composite.rho   = density_eff(c_composite,sphere.rho,matrix.rho);
 composite.cL    = longVel(composite.k,composite.mu,composite.rho);
 composite.imp   = composite.cL*composite.rho;
